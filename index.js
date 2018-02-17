@@ -1,8 +1,12 @@
 // Write your solution in this file!
 driver= {}
-updateDriverWithKeyAndValue(driver,key,value){
+function updateDriverWithKeyAndValue(driver,key,value){
   return Object.assign({},driver,{[key]:value})
 }
-destructivelyUpdateDriverWithKeyAndValue(driver,key,value){
+function destructivelyUpdateDriverWithKeyAndValue(driver,key,value){
   return Object.assign(driver,{[key]:value})
+}
+function deleteFromDriverByKey(driver,key){
+  newDriver= {...driver}
+  newDriver[key]
 }
